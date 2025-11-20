@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
+    
     <H1>Hola soy Ana</H1>
-
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="./css/estilo.css"> 
         <title>Inicio</title>
-
+        
     </head>
-<body>
+    <body>
     <header>
          <nav>
-            <ul>
+            <ul class="menu">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="quienes-somos.html">Quiénes Somos</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
@@ -18,17 +20,35 @@
             </ul>
         </nav>
     </header>    
-    <!--Me he liado mucho al hacer las carpetas-->       
-        <img src="imagenes/imagen1.webp" alt="texto alt"><br>
+    <!--Me he liado mucho al hacer las carpetas-->    
+       <picture>    
+        <img width="600" height="400" src="imagenes/imagen1.webp" alt="texto alt"><br>
+        </picture>
         <a href="https://www.google.com" target="_blank" title="">Haz click para ir a Google</a>
-
         <ol>
             <li>perro</li>
             <li>gato</li>
             <li>oso</li>
-
         </ol>
+        <section id="preguntas-frecuentes">
+            <h2>Preguntas frecuentes</h2>
+            <details>
+                <summary>¿Esto es una pregunta frecuente?</summary>
+                Puede serlo, y esta respuesta solo la verá el usuario si despliega el elemento
+            </details>
 
+            <details>
+                <summary>¿Se entiende la clase?</summary>
+                Perfectamente, gracias Carlos, muy amable.
+            </details>
+        </section><br>
+    
+    <footer>
+        <address>
+    (c) <a href="mailto:anaescalvarez@gmail.com">Ana Escarcena Álvarez</a><br>
+    Madrid, España
+        </address>
+    </footer>
 
 </body>
 </html>

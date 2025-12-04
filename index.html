@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     
-    <h1>Hola soy Ana</h1>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
@@ -11,18 +10,20 @@
     </head>
     <body>
     <header>
-         <nav>
+         <nav id="menu-principal">
             <ul class="menu">
-                <li><a href="/">Hola</a></li>
+                <li><a href="/">Inicio</a></li>
                 <li><a href="/quienes-somos.html">Quiénes Somos</a></li>
                 <li><a href="/contacto.html">Contacto</a></li>
                 <li><a href="/carpeta/archivo-carpeta.html">Archivo dentro de carpeta</a></li>
             </ul>
         </nav>
-    </header>    
+    </header>  
+        <div class="contenedor">  
     <!--Me he liado mucho al hacer las carpetas-->    
+        <h1>Hola soy Ana</h1>
        <picture>    
-        <img width="600" height="400" src="imagenes/imagen1.webp" alt="texto alt"><br>
+        <img class="tam-imagen decor-imagen" src="imagenes/imagen1.webp" alt="texto alt"><br>
         </picture>
         <a href="https://www.google.com" target="_blank" title="">Haz click para ir a Google</a>
         <ol>
@@ -30,15 +31,15 @@
             <li>gato</li>
             <li>oso</li>
         </ol>
-        <section id="preguntas-frecuentes">
-            <h2>Preguntas frecuentes</h2>
+        <section class="preguntas-frecuentes">
+            <h2 class="descendiente">Preguntas frecuentes</h2>
             <details>
-                <summary>¿Esto es una pregunta frecuente?</summary>
+                <summary class="faq">¿Esto es una pregunta frecuente?</summary>
                 Puede serlo, y esta respuesta solo la verá el usuario si despliega el elemento
             </details>
 
             <details>
-                <summary>¿Se entiende la clase?</summary>
+               <summary class="faq">¿Se entiende la clase?</summary>
                 Perfectamente, gracias Carlos, muy amable.
             </details>
         </section><br>
@@ -49,6 +50,6 @@
     Madrid, España
         </address>
     </footer>
-
+    </div>
 </body>
 </html>

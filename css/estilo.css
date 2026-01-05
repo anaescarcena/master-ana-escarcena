@@ -2,8 +2,8 @@
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 1pc;
-    background-color: #FFDAB9;
     height: 20px;
+    z-index: 10;
 }
 
 .menu {
@@ -17,6 +17,7 @@
     margin: 0%;
     top:  0%;
 }
+
 
 .contenedor {
     width: 90%;          
@@ -39,6 +40,79 @@ border-radius: 10%;
 }
 
 .preguntas-frecuentes .descendiente {
-
 font-style: oblique;    
 }
+
+.cerrar.elemento {
+position: fixed;
+top: 8px;
+right: 16px;
+background: red;
+padding: 17px;
+border-radius: 16px;
+color: white;
+font-weight: 800;    
+courser: pointer;
+z-index: 11;
+}
+
+div#imagenfalsa2 {
+height: 400px;
+width: 400px;
+background-image: url(/imagenes/corre.png);
+background-position: center;
+background-attachment: fixed;
+background-size: 200px 208.5px;
+margin: auto;
+}
+
+div#imagenfalsa {
+height: 417px;
+width: 800px;
+background-image: url(/imagenes/carita.png);
+margin: auto;
+margin-top: 80px auto; 
+background-size: 200px 208.5px;
+background-repeat: no-repeat;
+background-position-x: center;
+background-position-y: center;
+}
+
+a[target="_blank"] {
+
+    padding-right: 12em;
+    background-image: url(/imagenes/seguir-enlace.png);
+    background-size: 1.2em;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 4px;
+    color: orange;
+}
+
+div:first-child {
+
+    background-color: orange;
+    margin-top: 20px;
+
+}
+
+p::first-letter {
+
+    color: orange;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+::selection {
+
+    background: orangered;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    background: yellow;
+    border-radius: 50px;
+    width: 10px;
+}
+
+<!-- ¿Cómo hago para que el scrollbar no ocupe toda la pantalla?  -->    

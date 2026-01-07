@@ -1,24 +1,7 @@
-<!DOCTYPE html><html>
-    <head><meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta charset="UTF-8"><link rel="stylesheet" href="/css/estilo.css">
+<?php 
+include $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';
+?>
 
-<title>Quienes Somos</title>
-</head>
-
-<body>
-
-    <header>
-        <nav id="menu-principal">
-            <ul class="menu">
-                <li><a href="/">Inicio</a>
-                </li><li><a href="/quienes-somos.html">Quiénes Somos</a>
-                </li><li><a href="/contacto.html">Contacto</a>
-                </li><li><a href="/carpeta/archivo-carpeta.html">Archivo dentro de carpeta</a>
-                </li>
-            </ul>
-            
-            </nav>
-        </header>
         <div class="contenedor">
              <h1>Bienvenidos a la página Quienes somos</h1>
              <h2>Hola soy Ana</h2>
@@ -54,9 +37,6 @@
             <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mattis leo vitae felis elementum, a mattis ipsum iaculis. Suspendisse tempus sem leo, sed gravida purus aliquet nec. Phasellus tempus diam eget justo consequat, nec ultrices mauris venenatis. Pellentesque sapien velit, suscipit in neque quis, fermentum imperdiet diam. Aliquam eget ex est. Aliquam vulputate nulla ac augue bibendum auctor. Morbi eleifend imperdiet metus, at malesuada quam elementum non. Mauris interdum ac mi id vestibulum.</div>
             <blockquote>Si la vida te da limones, ¡haz limonada! Ana Escarcena</blockquote>
             
-            <footer>
-                <address>(c)<a href="mailto:anaescalvarez@gmail.com">Ana Escarcena Álvarez</a><br>Madrid, España</address>
-                </footer>
-            </div>
-        </body>
-        </html>
+<?php 
+include $_SERVER['DOCUMENT_ROOT'].'/assets/footer.php';
+?>

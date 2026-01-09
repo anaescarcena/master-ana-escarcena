@@ -10,7 +10,7 @@
     <header>
         <nav id="menu-principal">
             <ul class="menu">
-                <li><a href="/">Inicio</a>
+                <li><a href="/index.php">Inicio</a>
                 </li><li><a href="/quienes-somos.php">Quiénes Somos</a>
                 </li><li><a href="/contacto.php">Contacto</a>
                 </li><li><a href="/carpeta/archivo-carpeta.php">Archivo dentro de carpeta</a>

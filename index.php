@@ -4,6 +4,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';
 
 <?php 
 echo $_SERVER['DOCUMENT_ROOT'];
+$frase= "Frase con variable";
 ?>
 
 
@@ -19,6 +20,8 @@ echo $_SERVER['DOCUMENT_ROOT'];
             <li>gato</li>
             <li>oso</li>
         </ol>
+
+        <?php echo $frase; ?>
         <section class="preguntas-frecuentes">
             <h2 class="descendiente">Preguntas frecuentes</h2>
             <details>

@@ -5,7 +5,11 @@ include $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';
 <?php 
 echo $_SERVER['DOCUMENT_ROOT'];
 $frase= "Frase con variable";
+$A= 5;
+$B= 2;
 ?>
+
+
 
 
         <div class="contenedor">  
@@ -20,6 +24,18 @@ $frase= "Frase con variable";
             <li>gato</li>
             <li>oso</li>
         </ol>
+        <?php 
+        if ($A>$B) {
+            echo "A es mayor que B";
+        }
+        elseif ($A==$B) {
+            echo "A es igual que B";
+        }
+        else {
+            echo "A es menor que B";
+        }
+        ?>
+
 
         <?php echo $frase; ?>
         <section class="preguntas-frecuentes">

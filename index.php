@@ -25,6 +25,7 @@ $B= 2;
             <li>oso</li>
         </ol>
         <?php 
+        /* Buen uso del if-elseif-else. Está funcionando bien. */
         if ($A>$B) {
             echo "A es mayor que B";
         }

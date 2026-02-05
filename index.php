@@ -29,6 +29,13 @@ $B= 2;
         <div id="jsasdrubal" class="selectorclass"></div>
         <p id="selectorid" class="selectorclass">Mi cuarto Javascript</p>
 
+
+        <div id="cambiante">
+
+        </div>
+        <div class="efectito">
+            Pulsame para funcionar
+        </div>
         <script>
         // Seleccionar elemnto por ID
         // document.getElementById("selectorid").innerHTML = "ESTO ES UN TEXTO DE JS";
@@ -41,7 +48,25 @@ $B= 2;
         for (let i = 0; i < collection.length; i++) {
         collection[i].innerHTML = "ESTO ES UN TEXTO DE JS codigo por la clase Multiplicado";
         } */
+        const activador = document.getElementsByClassName("efectito");
+        activador[0].addEventListener("click", funcionana);
+
+        function funcionana(){
+        const collection = document.getElementsByClassName("selectorclass");
+        for (let i = 0; i < collection.length; i++) {
+        collection[i].classList.add("rojojs");
+        } 
+        activador[0].setAttribute("onclick", "funcionNumero2()");
+        }
         
+        function funcionNumero2(){
+        const ejemplazo = document.getElementsByClassName("selectorclass");
+        for (let i = 0; i < ejemplazo.length; i++) {
+        ejemplazo[i].classList.remove("rojojs");        
+        }
+        }
+// Para utilizar la funcionana poner onclick en el div
+
         // Un solo tag
        // document.getElementsByTagName("h2")[0].innerHTML = "ESTO es un h2 modificado por js";
 
@@ -65,7 +90,19 @@ $B= 2;
             .rojojs{
                 color: red;
             }
-
+.efectito {
+    display: flex;
+    width: 200px;
+    height: 100px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    background: rgb(244, 167, 25);
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    margin: auto;
+}
         </style>
  
 

@@ -70,7 +70,7 @@ $B= 2;
  
 
         <button type="button"
-        onclick='document.getElementById("secondjs").innerHTML = "¡Ha funcionado!" + ejemplo + profesores[1]'>
+        onclick='document.getElementById("secondjs").innerHTML = "¡Ha funcionado!" + (numberseo - 5) + ejemplo + profesores[1] + masterana.nombre'>
         Pulsame 2    
         </button>
 
@@ -79,24 +79,25 @@ $B= 2;
         Pulsame    
         </button>
 
-
-        
  <script> 
-const collection = document.querySelectorAll('a[href^="http"]');
-    for (let i = 0; i < collection.length; i++) {
-    collection[i].classList.className += "rojojs" ;
-        } 
 
 let ejemplo = 'Variable con let' ;
 const loquequiera = 'Constante';
 var testeo = 'Variable con var' ;
 let profesores = ['Ana', 'Clase', 'Sí'];
+let numberseo = 60;
+let masterana = {nombre: 'Javascript', Profesor: 'Carlos'};
+        </script>
+        
+ <script> 
+const collection = document.querySelectorAll('a[href^="http"]');
+    for (let i = 0; i < collection.length; i++) {
+    collection[i].classList.className + = "rojojs" ;
+        } 
         </script>
 
-        // Qué falla aqui y por que esto no comenta
 
-
-       <picture>    
+<picture>    
         <img class="tam-imagen decor-imagen" src="imagenes/imagen1.webp" alt="texto alt"><br>
         </picture>
         <a href="https://www.google.com" target="_blank" title="">Haz click para ir a Google</a>

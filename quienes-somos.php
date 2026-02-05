@@ -6,6 +6,8 @@ include $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';
              <h1>Bienvenidos a la página Quienes somos</h1>
              <h2>Hola soy Ana</h2>
              <h2>TH elements define table headers</h2>
+        
+        <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/tablassql.php'; ?>
              <table><tr>
                 <th>Encabezado 1</th>
                 <th>Encabezado 2</th>
@@ -37,6 +39,8 @@ include $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';
             <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mattis leo vitae felis elementum, a mattis ipsum iaculis. Suspendisse tempus sem leo, sed gravida purus aliquet nec. Phasellus tempus diam eget justo consequat, nec ultrices mauris venenatis. Pellentesque sapien velit, suscipit in neque quis, fermentum imperdiet diam. Aliquam eget ex est. Aliquam vulputate nulla ac augue bibendum auctor. Morbi eleifend imperdiet metus, at malesuada quam elementum non. Mauris interdum ac mi id vestibulum.</div>
             <blockquote>Si la vida te da limones, ¡haz limonada! Ana Escarcena</blockquote>
             
+            <?php reutilizable1();?>
 <?php 
 include $_SERVER['DOCUMENT_ROOT'].'/assets/footer.php';
 ?>
+<script src="/scripts/pruebas.js"></script>

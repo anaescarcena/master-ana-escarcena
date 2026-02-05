@@ -1,0 +1,1 @@
+document.getElementById("heading1").innerHTML = "h1 hecho en javascript"

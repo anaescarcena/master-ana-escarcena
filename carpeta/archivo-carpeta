@@ -23,8 +23,24 @@
 <section id="bannerhome">
     <h1 class="h1samll"> Archivo dentro de carpeta</h1>
     <div title="Este texto se lee cuando haces hover en el elemento"></div>
-    <p>Esto <b styile="color:blue" es></b> párrafo</p>
+    <p id="frase" >Esto <b style="color:blue" es></b> párrafo</p>
+
 </section>
+ <script> 
+    
+document.getElementById("frase").innerHTML = "Esto parrafo ahora es selector de JS";
+
+document.getElementsByClassName("h1samll")[0].innerHTML = "Selector JS con clase y color";
+
+ </script>
+
+        <style>
+            .h1samll{
+                color: blue;
+            }
+
+        </style>
+
 
     <footer>
         <address>

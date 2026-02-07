@@ -37,6 +37,50 @@ $B= 2;
             Pulsame para funcionar
         </div>
         <script>
+
+        let hora = new Date().getHours();
+        let educacion;
+
+        if (hora < 14){
+            educacion = "buenos días";
+        }
+        else if (hora < 21){
+            educacion = "buenas tardes";
+        }
+ 
+        else if (hora > 21){
+            educacion = "buenas noches";
+        }
+
+        else {
+            educacion ="muy buenas";
+        }
+        
+        
+        let dia;
+        switch (new Date().getDay()){
+            case 0:
+                dia = "Domingo";
+            break;
+            case 1:
+                dia = "lunes";
+            break;
+            case 2:
+                dia = "viernes";
+            break;
+            case 3:
+                dia = "martes";
+            break;
+            case 4:
+                dia = "miercoles";
+            break;
+            case 5:
+                dia = "jueves";
+            break;}
+
+
+            document.getElementById("cambiante").innerHTML = "Hola" + educacion + "Que" + dia + "mas pesado";
+
         // Seleccionar elemnto por ID
         // document.getElementById("selectorid").innerHTML = "ESTO ES UN TEXTO DE JS";
 

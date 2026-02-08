@@ -50,6 +50,17 @@ border-radius: 10%;
 font-style: oblique;    
                                     }
 
+button {
+    padding: 12px 24px;              
+    background-color: rgb(244, 167, 25); 
+    font-size: 16px;                  
+    font-weight: 400;                
+    border-radius: 20px;    
+    cursor: pointer;
+    border: 1px solid orange;
+    color: white;                
+}
+
 .cerrar.elemento {
 position: fixed;
 top: 8px;

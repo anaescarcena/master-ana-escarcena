@@ -79,7 +79,7 @@ $B= 2;
             break;}
 
 
-            document.getElementById("cambiante").innerHTML = "Hola" + educacion + "Que" + dia + "mas pesado";
+            document.getElementById("cambiante").innerHTML = "Hola " + educacion + " Que " + dia + " mas pesado";
 
         // Seleccionar elemnto por ID
         // document.getElementById("selectorid").innerHTML = "ESTO ES UN TEXTO DE JS";

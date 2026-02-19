@@ -33,7 +33,6 @@
                 </li><li><a href="/carpeta/archivo-carpeta">Archivo dentro de carpeta</a>
                 </li><li><a href="/nuevo">Nueva página redirección</a>
                 </li><li><a href="/basica">Web básica</a>
-               
                 </li>
             </ul>
             

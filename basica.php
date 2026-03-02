@@ -11,6 +11,10 @@ include $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';
 <p class="ctarepaso">JS para web básica</p>
 <button type="button"
     onclick='document.getElementsByClassName("ctarepaso")[0].innerHTML = "Esto es un botón";'>
+
+<p class="ctarepaso">Esto es un botón</p>
+     <button type="button"
+    onclick='document.getElementsByClassName("ctarepaso")[0].innerHTML = "JS para botón de web básica";'>
     Púlsame
 </button>
 
@@ -37,3 +41,4 @@ document.getElementById("estacion").innerHTML = periodo;
 // 4. El cierre siempre al final de TODO
 include $_SERVER['DOCUMENT_ROOT'].'/assets/footer.php';
 ?>
+<script src="/scripts/pruebas.js"></script>

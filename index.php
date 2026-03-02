@@ -16,7 +16,7 @@ $B= 2;
     <!--Me he liado mucho al hacer las carpetas-->    
 
         <h1 id="heading1"> Hello teacher</h1>
-        <h2>Texto de prueba</h2>
+        <h2>Texto de pruebaa</h2>
 
     <!-- <h1> <?php echo "Hello teacher";?></h1> (h1 hecho en php) -->
 

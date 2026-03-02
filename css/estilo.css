@@ -59,16 +59,6 @@ button {
     cursor: pointer;
     border: 1px solid orange;
     color: white;                
-
-.button {
-    padding: 12px 24px;
-    background-color: #f4a719;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
 .cerrar.elemento {
@@ -199,4 +189,3 @@ h1 {
     color: var(--naranja);
 }
 
-}

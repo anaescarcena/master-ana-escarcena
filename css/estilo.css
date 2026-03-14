@@ -1,0 +1,191 @@
+/*@import 'import.css;*/
+/*Aquí no funciona el CSS y puedo poner cualqueir tipo de dudas*/
+
+:root{
+    --naranja: rgb(244, 167, 25);
+    --espaciado: space-evenly;
+    }
+
+#menu-principal {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 1pc;
+    height: 20px;
+    z-index: 10;
+                }
+
+.menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: var(--espaciado);
+    position: fixed;
+    width: 100%;
+    background: white;
+    margin: 0%;
+    top:  0%;
+    }
+
+.contenedor {
+    width: 90%;          
+    max-width: 1200px;   
+    margin: 0 auto;     
+            }
+
+summary.faq {
+font-weight: 700;
+font-size: 1.2 rem;
+color: rgb(239, 158, 45);
+            }
+
+.tam-imagen.decor-imagen {
+
+width:"600px";
+height:"400px";
+border-radius: 10%;
+
+                        }
+
+.preguntas-frecuentes .descendiente {
+font-style: oblique;    
+                                    }
+
+button {
+    padding: 12px 24px;              
+    background-color: rgb(244, 167, 25); 
+    font-size: 16px;                  
+    font-weight: 400;                
+    border-radius: 20px;    
+    cursor: pointer;
+    border: 1px solid orange;
+    color: white;                
+}
+
+.cerrar.elemento {
+position: fixed;
+top: 8px;
+right: 16px;
+background: red;
+padding: 17px;
+border-radius: 16px;
+color: white;
+font-weight: 800;    
+cursor: pointer;
+z-index: 11;
+}
+
+/*No sé qué falla en courser*/
+
+
+div#imagenfalsa2 {
+height: 400px;
+width: 400px;
+background-image: url(/imagenes/corre.png);
+background-position: center;
+background-attachment: fixed;
+background-size: 200px 208.5px;
+margin: auto;
+                }
+
+div#imagenfalsa {
+height: 417px;
+width: 800px;
+background-image: url(/imagenes/carita.png);
+margin: auto;
+margin-top: 80px auto; 
+background-size: 200px 208.5px;
+background-repeat: no-repeat;
+background-position-x: center;
+background-position-y: center;
+                }
+
+a[target="_blank"] {
+
+    padding-right: 12em;
+    background-image: url(/imagenes/seguir-enlace.png);
+    background-size: 1.2em;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 4px;
+    color: var(--naranja);
+                    }
+
+div:first-child {
+
+    background-color: var(--naranja);
+    margin-top: 20px;
+
+                }
+
+p::first-letter {
+
+    color: var(--naranja);
+    font-size: 40px;
+    font-weight: 800;
+                }
+
+::selection {
+
+    background: orangered;
+    color: white;
+            }
+
+::-webkit-scrollbar {
+    background: yellow;
+    border-radius: 50px;
+    width: 10px;
+                    }
+
+/*¿Cómo hago para que el scrollbar no ocupe toda la pantalla?*/
+
+th {
+    background: var(--naranja);
+    }
+
+img {
+    max-width: 100%;
+        
+    }
+
+
+/*Responsive*/
+
+@media all and (max-width: 700px){
+    nav>ul {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+            }
+
+    nav>ul li {
+        margin: 6px 0px;
+
+                }
+                                }
+
+@media (min-width: 400px) and (max-width: 800px) {
+    *{
+        background-color: #f0f0f0;
+
+    }
+                                                }
+
+tbody tr:before {
+    content: "Fila " counter(fila)" :";
+    counter-increment: fila;
+    display: flex;
+    align-items: center;
+}
+
+tbody {
+    counter-reset: fila;
+
+}
+
+h1 {
+
+    filter: blur(0.8px);
+    color: var(--naranja);
+}
+

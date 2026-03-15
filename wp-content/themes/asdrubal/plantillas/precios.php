@@ -1,7 +1,11 @@
 <?php 
-include_once 'header.php';?>
+include_once 'header.php';
+/*Template Name: dinero */
+?>
 
 <div class="generico">
+
+<div class="Precios ultrarrebajados">
 <h1>
 <?php the_title();?>
 </h1>

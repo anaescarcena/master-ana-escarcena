@@ -1,0 +1,1 @@
+<h1>Aviso a navegantes, página 404</h1>

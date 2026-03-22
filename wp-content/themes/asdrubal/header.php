@@ -26,7 +26,7 @@
 
 </title>
 */ 
-
+include 'components/metas-seo.php';
 wp_head();
 ?>
 

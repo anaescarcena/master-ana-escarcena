@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="es"> 
     <head>
+        <!-- <meta http-equiv="refresh" content="0; url=https://es.wikipedia.org/wiki/Estepona" /> Intentar ponerla lo más arriba posible--->
+        <!--<meta http-equiv="refresh" content="15; url=https://es.wikipedia.org/wiki/Estepona" /> 15 Segundos para redirigir // Para redirecciones temporales un 2--->
+        <meta http-equiv="refresh" content="30; url=https://www.google.com/" />
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <meta charset="UTF-8">
         <title>Blog anita</title>        

@@ -26,9 +26,8 @@ $B= 2;
         <p id="secondjs" class="selectorclass"><a href="https://www.google.com/">Mi segundo Javascript</a></p>
         <p id="selectorid" class="selectorclass">Mi tercer Javascript </p>
 
-        <div id="jsasdrubal" class="selectorclass"></div>
+        <div id="jsasdrubal" class="selectorclass" data-nosnippet></div> <!-- Sirve para que Google no muestre en las SERPs este texto -->
         <p id="selectorid" class="selectorclass">Mi cuarto Javascript</p>
-
 
         <div id="cambiante">
 

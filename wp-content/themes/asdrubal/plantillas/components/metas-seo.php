@@ -1,3 +1,11 @@
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="UTF-8">
+<?php
+$term = get_queried_object();
+$robots_val = get_field('robots_config', $term) ?: 'index, follow';
+$robots_fijos = 'nosnippet, indexifembedded, notranslate, noimageindex';
+echo '<meta name="robots" content="' . esc_attr($robots_val) . ', ' . $robots_fijos . '">';
+?>
 <?php
 
 add_action('wp_head', 'master_seo_meta_tags', 1);

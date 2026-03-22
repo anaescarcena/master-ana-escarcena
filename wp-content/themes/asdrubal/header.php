@@ -21,12 +21,12 @@
 
     include_once $_SERVER['DOCUMENT_ROOT']. '/assets/functions.php';
        
+    </title>
+    */ 
 
     ?>
 
-</title>
-*/ 
-include 'components/metas-seo.php';
+<?php include get_template_directory() . '/plantillas/components/metas-seo.php';
 wp_head();
 ?>
 

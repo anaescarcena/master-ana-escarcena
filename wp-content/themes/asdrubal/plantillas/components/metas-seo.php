@@ -62,16 +62,19 @@ function master_seo_meta_tags() {
 add_action('wp_footer', 'master_fix_css_names');
 function master_fix_css_names() {
     ?>
-    <script id="css-renamer-script">
+ 
+ 
+ <script id="css-renamer-script">
     (function() {
         const styles = document.querySelectorAll('link[rel="stylesheet"]');
         const updateHref = (element, newName) => {
             if (!element || !element.href) return;
             element.href = element.href.replace(/\/[^\/]+\.css/, '/' + newName);
         };
-        if (styles[0]) updateHref(styles[0], 'style-min.css');
+        if (styles[0]) updateHref(styles[0], 'style.css');
         if (styles[1]) updateHref(styles[1], 'estilos-revisar.css');
     })();
     </script>
     <?php
 }
+

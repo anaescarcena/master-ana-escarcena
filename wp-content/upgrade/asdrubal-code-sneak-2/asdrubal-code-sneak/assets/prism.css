@@ -1,0 +1,30 @@
+/* Dots solo como barra decorativa superior, no como SVG por bloque */
+
+pre[class*="language-"],
+.acftc-field-code pre.line-numbers {
+	background-image: none !important;          
+	padding: 14px 24px 14px 60px !important;    
+	border-top: 3px solid var(--acftc-main) !important;  
+}
+
+/* Reducir espacio entre etiqueta y bloque */
+.acftc-field-meta {
+	height: 18px;
+	padding-top: 10px;
+}
+
+.acftc-field-meta__title[data-pseudo-content]::before {
+	top: 10px;
+	font-size: 11px;
+	color: var(--acftc-dark-grey);
+}
+
+/* Quitar badge de tipo en bloques cortos — demasiado ruido visual */
+.acftc-field-meta__title[data-type]::after {
+	display: none;
+}
+
+/* Separación entre bloques */
+.acftc-field-code {
+	margin-bottom: 0;
+}

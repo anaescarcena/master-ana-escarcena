@@ -10,13 +10,15 @@ include_once 'header.php';?>
 <?php the_content();?>
 
 </section>
-
-<?php
- include $plantillas .'tresposts.php';
-// include 'plantillas/tresposts.php'; 
-?>
-
-<div>
+    
+    <div class="trespost">
+    <?php
+    include $plantillas .'tresposts.php';
+    // include 'plantillas/tresposts.php'; 
+    ?>
+    </div>
+    
+</div>
 
 <?php
 // include_once 'footer.php'; 

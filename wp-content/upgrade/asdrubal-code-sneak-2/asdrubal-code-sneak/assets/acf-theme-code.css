@@ -1,0 +1,383 @@
+/**
+ * acf-theme-code.css
+ *
+ * Asdrubal Custom Fields: Theme Code
+ * Estilos para ACF / SCF versión 6 y superior
+ *
+ * Paleta de marca: https://asdrubalseo.com
+ */
+
+/* ── Variables de marca ─────────────────────────────────────────────────────── */
+:root {
+	--acftc-main:        #8d096b;
+	--acftc-secondary:   #71c8d9;
+	--acftc-third:       #f4b61c;
+	--acftc-white:       #faf7fb;
+	--acftc-lightgrey:   #ece9ed;
+	--acftc-grey:        #c0b6bd;
+	--acftc-dark-grey:   #7c767e;
+	--acftc-black:       #291825;
+
+	/* Code block */
+	--acftc-code-bg:       #0c1021;
+	--acftc-code-bg-alpha: #0c1021e6;
+	--acftc-code-text:     #e8e3ea;
+	--acftc-code-border:   rgba(141, 9, 107, 0.25);
+	--acftc-code-shadow:   0 8px 24px rgba(41, 24, 37, 0.35);
+
+	/* SVG macOS dots (tráfico) */
+	--acftc-dots-svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='54' height='14' viewBox='0 0 54 14'%3E%3Cg fill='none' fill-rule='evenodd' transform='translate(1 1)'%3E%3Ccircle cx='6' cy='6' r='6' fill='%23FF5F56' stroke='%23E0443E' stroke-width='.5'%3E%3C/circle%3E%3Ccircle cx='26' cy='6' r='6' fill='%23FFBD2E' stroke='%23DEA123' stroke-width='.5'%3E%3C/circle%3E%3Ccircle cx='46' cy='6' r='6' fill='%2327C93F' stroke='%231AAB29' stroke-width='.5'%3E%3C/circle%3E%3C/g%3E%3C/svg%3E");
+
+	--acftc-radius:      6px;
+	--acftc-transition:  220ms ease;
+}
+
+
+/* ── Meta box: cabecera ─────────────────────────────────────────────────────── */
+
+#acftc-meta-box .postbox-header h2 {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+}
+
+#acftc-meta-box .postbox-header h2::before {
+	content: '';
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background-color: var(--acftc-main);
+	-webkit-mask-image: url(icon-code-simple.svg);
+	mask-image: url(icon-code-simple.svg);
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
+	flex-shrink: 0;
+}
+
+/* Reset padding del contenedor interno */
+#acftc-meta-box .inside {
+	margin: 0;
+	padding: 0;
+}
+
+
+/* ── Barra de meta sobre cada campo ─────────────────────────────────────────── */
+
+.acftc-field-meta {
+	position: relative;
+	width: 100%;
+	height: 22px;
+	padding-top: 15px;
+}
+
+.acftc-field-meta__title {
+	font-size: 12px;
+	font-weight: 500;
+	letter-spacing: 0.02em;
+}
+
+.acftc-field-meta__title[data-pseudo-content]::before {
+	content: attr(data-pseudo-content);
+	display: block;
+	color: var(--acftc-dark-grey);
+	user-select: none;
+	position: absolute;
+	top: 15px;
+	left: 25px;
+}
+
+/* Badge de tipo de campo */
+.acftc-field-meta__title[data-type]::after {
+	content: attr(data-type);
+	position: absolute;
+	top: 13px;
+	right: 48px;
+	font-size: 10px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	color: var(--acftc-white);
+	background: var(--acftc-main);
+	padding: 1px 7px;
+	border-radius: 20px;
+	opacity: 0.85;
+}
+
+
+/* ── Bloque de código ────────────────────────────────────────────────────────── */
+
+.acftc-field-code {
+	position: relative;
+	margin-bottom: 2px;
+}
+
+/* Área de código: fondo oscuro con dots macOS */
+pre[class*="language-"],
+.acftc-field-code pre.line-numbers {
+	background-color: var(--acftc-code-bg-alpha) !important;
+	background-image: var(--acftc-dots-svg) !important;
+	background-repeat: no-repeat !important;
+	background-position: 16px 10px !important;
+	background-attachment: local !important;
+
+	color: var(--acftc-code-text) !important;
+	font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace !important;
+	font-size: 13px !important;
+	line-height: 1.65 !important;
+
+	padding: 36px 24px 20px 60px !important;
+	margin: 0 !important;
+
+	border: 1px solid var(--acftc-code-border) !important;
+	border-left: 3px solid var(--acftc-main) !important;
+	border-right: none !important;
+
+	box-shadow: var(--acftc-code-shadow) !important;
+	border-radius: 0 !important;
+
+	overflow-x: auto;
+	cursor: text;
+}
+
+/* Números de línea de Prism */
+.line-numbers .line-numbers-rows {
+	border-right: 1px solid rgba(141, 9, 107, 0.2) !important;
+	top: 37px !important;
+}
+
+.line-numbers-rows > span::before {
+	color: rgba(192, 182, 189, 0.35) !important;
+}
+
+/* Tokens Prism sobre fondo oscuro */
+.token.tag,
+.token.keyword      { color: #c792ea !important; }
+.token.function     { color: var(--acftc-secondary) !important; }
+.token.string       { color: #c3e88d !important; }
+.token.comment      { color: #546e7a !important; font-style: italic; }
+.token.variable     { color: #f07178 !important; }
+.token.operator,
+.token.punctuation  { color: #89ddff !important; }
+.token.number       { color: var(--acftc-third) !important; }
+
+
+/* ── Botones de copia ────────────────────────────────────────────────────────── */
+
+.acftc-field__copy,
+.acftc-copy-all {
+	position: absolute;
+	display: block;
+	background-image: url(icon-clipboard.svg);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0;
+	transition: opacity var(--acftc-transition), transform var(--acftc-transition), filter var(--acftc-transition);
+	z-index: 10;
+	filter: invert(1);
+}
+
+/* Mostrar botones al hacer hover sobre el bloque */
+.acftc-field-code:hover .acftc-field__copy,
+#acftc-meta-box .inside:hover .acftc-copy-all {
+	opacity: 0.55;
+}
+
+.acftc-field__copy:hover,
+.acftc-copy-all:hover {
+	opacity: 1 !important;
+	filter: invert(1) sepia(1) saturate(4) hue-rotate(270deg); /* tono --main al pasar */
+	transform: scale(1.1);
+}
+
+/* Botón de campo individual */
+.acftc-field__copy {
+	top: -24px;
+	right: 20px;
+	width: 14px;
+	height: 22px;
+}
+
+/* Botón "copiar todo" */
+.acftc-copy-all {
+	top: -38px;
+	right: 18px;
+	width: 18px;
+	height: 22px;
+}
+
+/* Animación al hacer clic */
+@keyframes acftc-pop {
+	0%   { transform: scale(1); }
+	35%  { transform: scale(1.35, 1.15); }
+	65%  { transform: scale(0.9); }
+	85%  { transform: scale(1.06); }
+	100% { transform: scale(1); }
+}
+
+.acftc-field__copy:focus,
+.acftc-copy-all:focus {
+	outline: none;
+	border: none;
+	box-shadow: none !important;
+	animation: acftc-pop 280ms ease-out forwards;
+}
+
+
+/* ── Avisos ──────────────────────────────────────────────────────────────────── */
+
+.acftc-notice {
+	padding: 18px 24px;
+	border-top: 1px solid var(--acftc-lightgrey);
+}
+
+.acftc-notice p {
+	font-weight: 600;
+	line-height: 1.5;
+	font-size: 0.9em;
+	margin: 0;
+	color: var(--acftc-dark-grey);
+}
+
+/* Aviso: grupo vacío */
+.acftc-notice--empty-field-group {
+	padding: 32px 24px;
+	text-align: center;
+}
+
+.acftc-notice--empty-field-group p::before {
+	content: '{}';
+	display: block;
+	font-size: 28px;
+	font-family: monospace;
+	color: var(--acftc-grey);
+	margin-bottom: 10px;
+}
+
+/* Aviso: plugin de campos detectado (ACF / SCF) */
+.acftc-notice--cf-plugin {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	background: linear-gradient(135deg, rgba(141,9,107,0.06) 0%, rgba(113,200,217,0.06) 100%);
+	border-top: 1px solid rgba(141, 9, 107, 0.12);
+	border-bottom-left-radius: var(--acftc-radius);
+	border-bottom-right-radius: var(--acftc-radius);
+}
+
+.acftc-notice--cf-plugin p {
+	font-size: 0.8em;
+	color: var(--acftc-dark-grey);
+}
+
+.acftc-notice--cf-plugin strong {
+	color: var(--acftc-main);
+}
+
+
+/* ── Selector de ubicaciones ─────────────────────────────────────────────────── */
+
+.acftc-location-settings {
+	padding: 20px 24px;
+	background: var(--acftc-white);
+	border-bottom: 1px solid var(--acftc-lightgrey);
+}
+
+.acftc-location-settings__inside {
+	max-width: 560px;
+}
+
+.acftc-location-settings .acf-field {
+	margin: 0;
+}
+
+/* Ocultar todos los bloques de ubicación */
+.location-wrap {
+	display: none;
+}
+
+/* Mostrar el primero */
+#acftc-group-0.location-wrap {
+	display: block;
+}
+
+/* Último bloque de código en una ubicación: redondear esquinas inferiores */
+.location-wrap > div:last-child pre,
+.acftc-code-container > div:last-child pre {
+	border-radius: 0 0 var(--acftc-radius) var(--acftc-radius) !important;
+}
+
+
+/* ── Herramienta de registro (página de Herramientas de ACF/SCF) ─────────────── */
+
+#acftc-meta-box .postbox-header h2,
+#acf-admin-tool-acftc-location-registration .acf-postbox-header h2 {
+	display: inline-flex;
+	align-items: center;
+}
+
+.acftc-registration-tool-title {
+	color: var(--acftc-black);
+	font-size: 14px;
+	font-weight: 600;
+	margin: 0 0 18px;
+}
+
+.acftc-registration-wrap {
+	display: none;
+}
+
+#acftc-register-block {
+	display: block;
+}
+
+.acftc-block-code-hidden,
+.acftc-option-code-hidden {
+	display: none;
+}
+
+.acftc-label {
+	font-weight: 600;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	color: var(--acftc-dark-grey);
+	margin-bottom: 6px;
+}
+
+.acftc-label label:hover {
+	cursor: default !important;
+}
+
+.acftc-input select,
+.acftc-input input {
+	width: 100%;
+}
+
+.acftc-field--top {
+	margin-bottom: 18px;
+}
+
+.acftc-field--name {
+	margin-bottom: 22px;
+}
+
+.acftc-field-meta--registration {
+	margin-left: -25px;
+	margin-right: -25px;
+	width: calc(100% + 50px);
+	border-top: 1px solid var(--acftc-lightgrey);
+}
+
+.acftc-field__copy--registration {
+	right: -1px;
+}
+
+.acftc-registration-wrap pre.line-numbers {
+	margin: 0 -24px -26px -24px !important;
+	border-radius: 0 0 var(--acftc-radius) var(--acftc-radius) !important;
+}

@@ -80,6 +80,17 @@ cursor: pointer;
 z-index: 11;
 }
 
+.trespost {
+
+    justify-content: center;
+    align-items: stretch;
+    gap: 50px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    background: coral;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
 
 div#imagenfalsa2 {
 height: 400px;

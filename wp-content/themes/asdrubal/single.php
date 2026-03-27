@@ -20,6 +20,16 @@
     </section>
 </div>
 
+        <style>
+            .aspectocoche{
+                aspect-ratio: 3 / 2;
+                object-fit: cover;
+            }
+        </style>
+<div class="infocoche">
+<img height="300px" class="aspectocoche" src="<?php the_field ('imagencoche'); ?>" />
+</div>
+
 <?php
 if ( in_category('coches') ) {
     $metadesc_coches = 'Mi memorable experiencia con un ' . get_field('marca_coche') . ' ' . get_field('modelo_coche') . ' de ' . get_field('CV');

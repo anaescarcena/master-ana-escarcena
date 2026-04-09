@@ -7,3 +7,5 @@
 ## 09/01/2026 Ejercicios CSS, FUentes y PHP revisados, todo correcto
 
 ## 15/01/2026 Ejercicios condicionales PHP correcto.
+
+## 9/4/26 Revisado - Web básica, metaetiquetas

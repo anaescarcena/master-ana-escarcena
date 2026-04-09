@@ -31,7 +31,8 @@ function master_seo_meta_tags() {
 
     ?>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8" /> 
+    <!-- Viewport y charset repetidos, ya está al inicio -->
     <title><?php echo esc_html($main_title); ?></title>
     <meta name="description" content="<?php echo esc_attr($main_desc); ?>">
     <link rel="canonical" href="<?php echo esc_url($canonical); ?>">

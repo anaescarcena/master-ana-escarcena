@@ -50,6 +50,7 @@ function master_seo_meta_tags() {
     <meta name="twitter:title" content="<?php echo esc_attr($tw_title); ?>">
     <meta name="twitter:description" content="<?php echo esc_attr($tw_desc); ?>">
     <meta name="twitter:image" content="<?php echo esc_url($final_img); ?>">
+    <!-- Falta twitter:url -->
     <?php endif; ?>
 
     <?php the_field('metatags_personalizados', $term); ?>

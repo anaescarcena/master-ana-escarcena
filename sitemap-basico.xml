@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 
   <url>
     <loc>https://master-ana-escarcena.com/</loc>
@@ -14,6 +14,13 @@
 
   <url>
     <loc>https://master-ana-escarcena.com/contacto</loc>
+     <video:video>
+        <video:thumbnail_loc>https://master-ana-escarcena.test/video/pajarito.mp4</video:thumbnail_loc>
+        <video:title>Pajarito</video:title>
+        <video:description>
+        Un gorrión en una rama de un árbol saltando y volando.
+        </video:description>
+     </video:video>
   </url>
 
   <url>

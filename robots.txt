@@ -1,0 +1,26 @@
+# Ana Escarcena Álvarez
+
+User-agent: Yandex
+Disallow: /
+
+User-agent: AdsBot
+Allow: /blackfriday/
+Disallow: /scripts/*.js*?prescindible*
+Disallow: /nomeves/
+Allow: /nomeves/cartagena/
+Allow: /nomeves/sources/*.css$
+
+User-agent: Googlebot
+Disallow: /blackfriday/
+Disallow: /scripts/*.js*?prescindible*
+Disallow: /nomeves/
+Allow: /nomeves/cartagena/
+Allow: /nomeves/sources/*.css$
+
+User-agent: *
+Disallow: /scripts/*.js*?prescindible*
+Disallow: /nomeves/
+Allow: /nomeves/cartagena/
+Allow: /nomeves/sources/*.css$
+
+Sitemap: https://example.com/sitemap.xml

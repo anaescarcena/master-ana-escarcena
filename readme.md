@@ -10,4 +10,4 @@
 
 ## 9/4/26 Revisado - Web básica, metaetiquetas
 
-## 01/07/26 Revisado: Todo perfecto
+## 01/07/26 Revisado Sitempas y robots.txt: Todo perfecto

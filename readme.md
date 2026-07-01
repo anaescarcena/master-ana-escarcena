@@ -9,3 +9,5 @@
 ## 15/01/2026 Ejercicios condicionales PHP correcto.
 
 ## 9/4/26 Revisado - Web básica, metaetiquetas
+
+## 01/07/26 Revisado: Todo perfecto

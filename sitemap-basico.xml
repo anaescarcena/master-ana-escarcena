@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" 
+xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+>
 
   <url>
     <loc>https://master-ana-escarcena.com/</loc>
@@ -35,6 +39,19 @@
      </video:video>  <!-- Tener en cuenta que son directrices de Google y que en otros motores no es igual (SEO Internacional) -->
 
   </url>
+
+  <url>
+<loc>https://master-ana-escarcena.com/noticia</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Crítica de 'Todo a la vez en todas partes', el regreso de Ke Huy Quan</news:name> <!-- Nombre publicación (H1) -->
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-07-11T12:00:00+02:00</news:publication_date>
+      <news:title>Una película que de forma muy marciana muestra la realidad de las relaciones familiares</news:title> <!-- Título que nos podemos inventar -->
+    </news:news>
+  <url>
+
 
   <url>
     <loc>https://master-ana-escarcena.com/basica</loc>

@@ -20,7 +20,20 @@
         <video:description>
         Un gorrión en una rama de un árbol saltando y volando.
         </video:description>
-     </video:video>
+
+        <!-- Etiquetas opcionales para vídeo -->
+        <video:duration>10</video:duration>
+        <video:publication_date>2026-06-29</video:publication_date>
+        <video:family_friendly>yes</video:family_friendly>
+        <video:rating>5.0</video:rating>
+        <video:restriction relationship="deny">US MX</video:restriction>
+        <video:platform relationship="allow">web tv mobile</video:platform>
+        <video:requires_subscription>no</video:requires_subscription>
+        <video:uploader>Ana Escarcena Álvarez</video:uploader>
+        <video:live>no</video:live>
+        <video:tag>cookies, cache,seo, seo tecnico, pajarito</video:tag>
+     </video:video>  <!-- Tener en cuenta que son directrices de Google y que en otros motores no es igual (SEO Internacional) -->
+
   </url>
 
   <url>

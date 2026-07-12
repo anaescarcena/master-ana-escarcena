@@ -27,7 +27,19 @@ switch ($ejercicio) {
                 echo "No sabemos qué encabezado es la variable ejercicio";
                 break;
 }
+
 ?>
+
+<div>
+<h2> Ejemplos de urls relativas y absolutas </h2>
+
+<a href="https://master-ana-escarcena.test/quienes-somos">Ejemplo url absoluta</a><br>
+<a href="quienes-somos">Ejemplo 1 url relativa (en la misma carpeta)</a><br>
+<a href="ejemplo-rutas/destino">Ejemplo 2 url relativa (en la carpeta categoría que se encuentra en la ruta de la página actual)</a><br>
+<a href="/ejemplo-rutas/destino">Ejemplo 2 url relativa (en la carpeta categoría que se encuentra en la ruta de la página actual)</a><br>
+
+</div>
+
             <?php reutilizable1();?>
 
 

@@ -50,7 +50,7 @@ xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
       <news:publication_date>2026-07-11T12:00:00+02:00</news:publication_date>
       <news:title>Una película que de forma muy marciana muestra la realidad de las relaciones familiares</news:title> <!-- Título que nos podemos inventar -->
     </news:news>
-  <url>
+  </url>
 
 
   <url>

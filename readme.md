@@ -10,4 +10,6 @@
 
 ## 9/4/26 Revisado - Web básica, metaetiquetas
 
-## 01/07/26 Revisado Sitempas y robots.txt: Todo perfecto
+## 01/07/26 Revisado Sitemaps y robots.txt: Todo perfecto
+
+## 13/07/26 Revisado URLs y sitemaps

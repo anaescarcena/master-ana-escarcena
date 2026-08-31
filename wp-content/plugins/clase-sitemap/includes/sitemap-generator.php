@@ -18,6 +18,8 @@ $domblog->preserveWhiteSpace = false;
 $rootblog = $domblog->createElement('urlset');
 $domblog->appendChild($rootblog);
 $rootblog->setAttribute('xmlns', 'http://www.sitemaps.org/schemas/sitemap/0.9');
+$rootblog->setAttribute('xmlns:news', 'http://www.google.com/schemas/sitemap-news/0.9');
+
 //$resultblog->setAttribute('id', 1);
 $argsblog = array(
 'posts_per_page' => -1,
@@ -39,6 +41,27 @@ $resultblog = $domblog->createElement('url');
 $rootblog->appendChild($resultblog);
 $resultblog->appendChild($domblog->createElement('loc', $enlace));
 $resultblog->appendChild($domblog->createElement('lastmod', $lastestmod));
+
+
+// Añadir estructura adicional dentro de <news:news>
+$newsElement = $domblog->createElement('news:news');
+$resultblog->appendChild($newsElement);
+$tituloblog = get_the_title();
+$publishedblog = get_the_modified_date('Y-m-d\TH:i:s.uP');
+$newstitle = get_field('title');
+
+// Definir las variables dentro de <news:news> según tus necesidades
+$publicationElement = $domblog->createElement('news:publication');
+$publicationNameElement = $domblog->createElement('news:name', $tituloblog);
+$publicationLanguageElement = $domblog->createElement('news:language', 'es');
+$publicationElement->appendChild($publicationNameElement);
+$publicationElement->appendChild($publicationLanguageElement);
+$newsElement->appendChild($publicationElement);
+$publicationDateElement = $domblog->createElement('news:publication_date', $publishedblog);
+$newsElement->appendChild($publicationDateElement);
+$titleElement = $domblog->createElement('news:title', $newstitle);
+$newsElement->appendChild($titleElement);
+
 }
 }
 endwhile;

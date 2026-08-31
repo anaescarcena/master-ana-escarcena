@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
     <loc>https://master-ana-escarcena.test/articulo/articulo-nuevo-para-el-sitemap/</loc>
     <lastmod>2026-08-30</lastmod>
+    <news:news>
+      <news:publication>
+        <news:name>Artículo nuevo para el sitemap</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-30T16:04:04.000000+02:00</news:publication_date>
+      <news:title/>
+    </news:news>
   </url>
   <url>
     <loc>https://master-ana-escarcena.test/articulo/lo-que-hace-el-marketing-digital/</loc>
     <lastmod>2026-03-27</lastmod>
+    <news:news>
+      <news:publication>
+        <news:name>Lo que hace el marketing digital</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-27T21:22:42.000000+01:00</news:publication_date>
+      <news:title/>
+    </news:news>
   </url>
 </urlset>

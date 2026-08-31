@@ -14,6 +14,5 @@ include 'includes/borrar-sitemap.php';
 
 //Generar plantilla:
 include 'includes/template-generator.php';
-
 ?>
 

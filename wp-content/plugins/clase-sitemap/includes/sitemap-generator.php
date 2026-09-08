@@ -19,6 +19,7 @@ $rootblog = $domblog->createElement('urlset');
 $domblog->appendChild($rootblog);
 $rootblog->setAttribute('xmlns', 'http://www.sitemaps.org/schemas/sitemap/0.9');
 $rootblog->setAttribute('xmlns:news', 'http://www.google.com/schemas/sitemap-news/0.9');
+$rootblog->setAttribute('xmlns:image', 'http://www.google.com/schemas/sitemap-image/1.1');
 
 //$resultblog->setAttribute('id', 1);
 $argsblog = array(
@@ -61,6 +62,30 @@ $publicationDateElement = $domblog->createElement('news:publication_date', $publ
 $newsElement->appendChild($publicationDateElement);
 $titleElement = $domblog->createElement('news:title', $newstitle);
 $newsElement->appendChild($titleElement);
+
+// Imagen destacada del post
+if (has_post_thumbnail()) {
+$featured_url = get_the_post_thumbnail_url(get_the_ID(), 'full');
+$image_element = $domblog->createElement('image:image');
+$resultblog->appendChild($image_element);
+$image_element->appendChild($domblog->createElement('image:loc', $featured_url));
+}
+
+// Obtener las imágenes en el contenido de the_content()
+$content = get_the_content();
+$pattern = '/<img[^>]+src=[\'"]([^\'"]+)[\'"][^>]*>/';
+preg_match_all($pattern, $content, $matches);
+
+// Agregar las URL de las imágenes al elemento <url>
+if (!empty($matches[1])) {
+foreach ($matches[1] as $image_url) {
+$image_element = $domblog->createElement('image:image');
+$resultblog->appendChild($image_element);
+
+$loc_element = $domblog->createElement('image:loc', $image_url);
+$image_element->appendChild($loc_element);
+}
+}
 
 }
 }

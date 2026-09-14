@@ -58,8 +58,29 @@ else {
         } else {
             the_field('metadescription', $term);
         } ?>">
-    <?php 
-} 
+    <?php
+}
 ?>
+
+<?php if ( is_singular('post') && get_post_field('post_name') === 'lo-que-hace-el-marketing-digital' ) : ?>
+<!-- Datos estructurados: BlogPosting (ejemplo, solo en este artículo) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://master-ana-escarcena.test/articulo/lo-que-hace-el-marketing-digital/"
+  },
+  "headline": "Lo que hace el marketing digital",
+  "description": "Una introducción práctica a qué es el marketing digital, sus canales principales y cómo puede ayudar a un negocio a crecer online.",
+  "image": "https://master-ana-escarcena.test/wp-content/uploads/lo-que-hace-el-marketing-digital.jpg",
+  "datePublished": "2026-03-20T10:00:00+01:00",
+  "dateModified": "2026-03-27T21:22:42+01:00",
+  "author": { "@id": "https://master-ana-escarcena.test/#persona", "name": "Ana Escárcena Álvarez" },
+  "publisher": { "@id": "https://master-ana-escarcena.test/#organization", "name": "Future" }
+}
+</script>
+<?php endif; ?>
 
 <?php include_once 'footer.php'; ?>

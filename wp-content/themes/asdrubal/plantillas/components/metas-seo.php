@@ -58,6 +58,32 @@ function master_seo_meta_tags() {
     <?php if ( get_field('adultos', $term) ): ?>
         <meta name="rating" content="adult">
     <?php endif; ?>
+
+    <!-- Datos estructurados: Organización (global, todas las páginas) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "@id": "https://master-ana-escarcena.test/#organization",
+      "name": "Future",
+      "url": "https://master-ana-escarcena.test",
+      "telephone": "+34 634 50 52 33",
+      "email": "anaescalvarez@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Estepona",
+        "addressRegion": "Málaga",
+        "addressCountry": "ES"
+      },
+      "areaServed": { "@type": "City", "name": "Estepona" },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "09:00",
+        "closes": "17:00"
+      }
+    }
+    </script>
     <?php
 }
 
